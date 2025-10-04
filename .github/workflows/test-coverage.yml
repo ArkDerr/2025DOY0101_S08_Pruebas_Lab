@@ -6,8 +6,10 @@ on:
   pull_request:
     branches: [ "**" ] # En cualquier pull_request (hacia cualquier rama).
 
-permissions:
-  contents: read #Permisos mínimos para que el job pueda leer el repo. Seguridad básica.
+permissions: #Permisos mínimos para que el job pueda leer el repo. Seguridad básica.
+  contents: read
+  checks: write
+  pull-requests: write
 
 jobs:
   build-test-coverage: # Nombre del job
