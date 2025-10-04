@@ -170,7 +170,7 @@
 								<!-- Tipos de medida: COVEREDRATIO, TOTALCOUNT -->
 								<value>COVEREDRATIO</value>
 								<!-- Umbral mínimo (0.80 = 80%) -->
-								<minimum>0.80</minimum>
+								<minimum>0.90</minimum>
 							</limit>
 							</limits>
 						</rule>
