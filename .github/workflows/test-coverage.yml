@@ -18,11 +18,11 @@ jobs:
       - name: Checkout # Clona tu repositorio dentro de la VM. Obligatorio para poder compilar/testear tu código.
         uses: actions/checkout@v4 
 
-      - name: Setup JDK 17 # Instala Java 17 en el runner (en este caso ubuntu-latest).
+      - name: Setup JDK 21 # Instala Java 17 en el runner (en este caso ubuntu-latest).
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: 17
+          java-version: 21
           cache: maven
 
       # Ejecuta tus tests con cobertura. Si en el POM tienes el jacoco:check con mínimos,
